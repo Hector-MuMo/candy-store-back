@@ -9,7 +9,8 @@ const InventorySchema = new mongoose.Schema({
     toJSON: {
         virtuals: true,
         versionKey: true
-    }
+    },
+    timestamps: true,
 })
 
 export default InventorySchema
