@@ -4,6 +4,7 @@ import * as dotenv from "dotenv"
 import cors from "cors"
 import ProductsRoutes from "../src/api/products/routes/index"
 import OrdersRoutes from "../src/api/orders/routes/index"
+import InventoriesRoutes from "../src/api/inventories/routes/index"
 
 const app = express()
 dotenv.config()
@@ -30,5 +31,5 @@ app.use(express.json());
 app.use(cors(corsOptions))
 app.use("/products", ProductsRoutes)
 app.use("/orders", OrdersRoutes)
-//app.use("inventories", InvetoriesRotures)
+app.use("inventories", InventoriesRoutes)
 //app.use("users", UsersRotures)
