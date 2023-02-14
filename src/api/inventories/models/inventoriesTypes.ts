@@ -3,3 +3,5 @@ interface Inventory {
     stock: number,
     location: string,
 }
+
+export { Inventory }

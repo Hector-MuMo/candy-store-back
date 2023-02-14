@@ -2,9 +2,9 @@ import express from "express"
 import mongoose from "mongoose"
 import * as dotenv from "dotenv"
 import cors from "cors"
-import ProductsRoutes from "../src/api/products/routes/index"
-import OrdersRoutes from "../src/api/orders/routes/index"
-import InventoriesRoutes from "../src/api/inventories/routes/index"
+import ProductsRoutes from "./api/products/routes/index"
+import OrdersRoutes from "./api/orders/routes/index"
+import InventoriesRoutes from "./api/inventories/routes/index"
 
 const app = express()
 dotenv.config()

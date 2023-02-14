@@ -1,4 +1,5 @@
 import mongoose from "mongoose"
+import { Inventory } from "./inventoriesTypes"
 import InventorySchema from "./InventorySchema"
 
 const getAll = async (page?: number, limit?: number) => {
