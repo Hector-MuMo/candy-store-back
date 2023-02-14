@@ -31,5 +31,5 @@ app.use(express.json());
 app.use(cors(corsOptions))
 app.use("/products", ProductsRoutes)
 app.use("/orders", OrdersRoutes)
-app.use("inventories", InventoriesRoutes)
+app.use("/inventories", InventoriesRoutes)
 //app.use("users", UsersRotures)
